@@ -1,0 +1,50 @@
+.formulaire {
+  margin-top: 70px;
+  color: white;
+}
+
+.field {
+  margin-top: 20px;
+}
+
+.text-field input, .text-field textarea, .text-field select {
+  display: block;
+  font-size: 1.3em;
+  color: white;
+  width: 300px;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+}
+
+option {
+  color: black;
+}
+
+.text-field textarea {
+  width: 300px;
+  height: 100px;
+  background: none;
+  border: white solid 1px;
+}
+
+.btn input {
+  background: none;
+  border: none;
+}
+
+.formulaire .btn {
+  margin-left: 0;
+}
+
+.check-box label {
+  margin-left: 5px;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.profil .field {
+  margin-top: 30px;
+}
