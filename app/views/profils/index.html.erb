@@ -1,0 +1,26 @@
+<section class="banner">
+  <div class="container">
+    <h1>Cherche Michel(le) !</h1>
+    <div class="row">
+      <% @profils.each do |profil| %>
+      <div class="col-4 card shadow bg-white rounded p-0 m-auto" style="width: 18rem;">
+        <%= image_tag profil.photo, style:" width: 100%; height:auto; " %>
+        <div class="card-body">
+          <h3 class="card-title"><%= profil.firstname %>, <%= profil.age %> ans</h3>
+          <p class="card-text"><%=  %></p>
+          <%= link_to 'Découvrir', profil_path(profil.id), class: "btn" %>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <% end %>
+    </div>
+  </div>
+
+
+</section>

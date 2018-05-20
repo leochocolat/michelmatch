@@ -1,0 +1,41 @@
+section {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.banner {
+  background-image: url(bg1.jpeg);
+  animation: bg 2s infinite;
+}
+
+.banner1 {
+  background-image: url(bg2.jpeg);
+  animation: bg 2s infinite;
+}
+
+.banner3 {
+  background-image: url(bg3.jpeg);
+  animation: bg 2s infinite;
+}
+
+@keyframes bg {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 102%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+
+@media screen and (max-width: 1700px) {
+  .banner1, .banner, .banner3 {
+    animation: none;
+  }
+}
