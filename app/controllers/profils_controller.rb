@@ -17,9 +17,13 @@ class ProfilsController < ApplicationController
   end
 
   def edit
+    @profil = Profil.find(params[:id])
   end
 
   def update
+    @profil = Profil.find(params[:id])
+    @profil.update(profil_params)
+    redirect_to profils_path
   end
 
   def destroy

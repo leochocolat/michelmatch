@@ -1,13 +1,19 @@
-<section style="width: 100vw; height:100vh; background-image:url(<%= @profil.photo %>); background-size: cover; background-position:center; ">
+<!-- <section style="width: 100vw; height:100vh; background-image:url(<%= @profil.photo %>); background-size: cover; background-position:center; "> -->
+<!-- </section> -->
+
+  <div class="d-flex">
+    <div class="align-content-stretch flex-wrap photobg" style="width:50vw; height:100vh; background-image:url(<%= @profil.photo %>); background-size: cover; background-position:center;">
+    </div>
+    <div class="align-content-stretch flex-wrap contentshow" style="width:50vw; height:100vh;">
 
 
-  <div class="container">
-    <h1><%= @profil.firstname %> <%= @profil.lastname %></h1>
-    <h2><%= @profil.age %> ans</h2>
-    <h3><%= @profil.formation %></h3>
-    <p><%= @profil.description %></p>
+      <div class="content-show">
+        <h1><%= @profil.firstname %></h1>
+        <h2><%= @profil.age %> ans</h2>
+        <p><%= @profil.description %></p>
+      </div>
+      <span class="badge"><%= @profil.formation %></span>
 
+    </div>
 
   </div>
-
-</section>
