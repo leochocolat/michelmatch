@@ -18,6 +18,14 @@ p {
   text-align: justify;
 }
 
+.btn-primary {
+  &:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+  }
+}
+
 
 .contentshow {
   opacity: 0;

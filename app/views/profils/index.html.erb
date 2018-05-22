@@ -9,13 +9,12 @@
           <div class="row">
             <div class="example-2 cards">
               <div class="wrapper" style="background-image:url(<%= profil.photo %>)">
-                <div class="header">
-                </div>
+
                 <div class="data">
                   <div class="content">
                   <h3 class="title"><%= profil.firstname %>, <%= profil.age %></h3>
                   <p class="text"><%= profil.description %></p>
-                  <%= link_to 'Découvrir', profil_path(profil.id) %>
+                  <%= link_to 'Découvrir', profil_path(profil.id), class:"little-btn" %>
                 </div>
               </div>
             </div>
