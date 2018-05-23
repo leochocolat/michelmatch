@@ -87,6 +87,8 @@ a {
     text-decoration: none;
     border-bottom: solid transparent 1px;
     transition: ease-in-out .3s all;
+    float: right;
+    margin-bottom: 5px;
     &:hover {
       font-weight: 600;
       color: white;
