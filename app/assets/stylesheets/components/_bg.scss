@@ -7,17 +7,17 @@ section {
 }
 
 .banner {
-  background-image: url(images/bg1.jpeg);
+  background-image: asset-data-url("bg1.jpg");
   animation: bg 2s infinite;
 }
 
 .banner1 {
-  background-image: url(images/bg2.jpeg);
+  background-image: asset-data-url("bg2.jpg");
   animation: bg 2s infinite;
 }
 
 .banner3 {
-  background-image: url(images/bg3.jpeg);
+  background-image: asset-data-url("bg3.jpg");
   animation: bg 2s infinite;
 }
 
