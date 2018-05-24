@@ -5,26 +5,21 @@
     <h1>Cherche Michel(le) !</h1>
 
       <% @profils.each do |profil| %>
-
           <div class="row">
+
             <div class="example-2 cards">
               <div class="wrapper" style="background-image:url(<%= profil.photo %>)">
-
                 <div class="data">
                   <div class="content">
-                  <h3 class="title"><%= profil.firstname %>, <%= profil.age %></h3>
-                  <p class="text"><%= profil.description %></p>
-                  <%= link_to 'Découvrir', profil_path(profil.id), class:"little-btn" %>
+                    <h3 class="title"><%= profil.firstname %>, <%= profil.age %></h3>
+                    <p class="text"><%= truncate profil.description, length: 50 %></p>
+                    <%= link_to 'Découvrir', profil_path(profil.id), class:"little-btn" %>
+                  </div>
                 </div>
               </div>
-            </div>
+           </div>
+
           </div>
-        </div>
-
-
-
-
-
       <% end %>
 
     </section>

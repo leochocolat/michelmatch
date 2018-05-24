@@ -29,7 +29,9 @@ p {
 
 .contentshow {
   opacity: 0;
-  animation: opacity 1s forwards .7s;
+  animation: opacity 1s forwards .2s;
+  -webkit-animation: opacity 1s forwards .2s;
+  -moz-animation: opacity 1s forwards .2s;
   .content-show {
     width: 80%;
     margin: auto;
@@ -61,4 +63,6 @@ p {
 .photobg {
   width: 0vw;
   animation: slide .8s forwards;
+  -webkit-animation: slide .8s forwards;
+  -moz-animation: slide .8s forwards;
 }
