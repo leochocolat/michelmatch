@@ -1,0 +1,16 @@
+<div class="d-flex">
+  <div class="align-content-stretch flex-wrap photobg" style="width:50vw; height:100vh; background-image:url(<%= @user.image %>); background-size: cover; background-position:center;">
+  </div>
+  <div class="align-content-stretch flex-wrap contentshow" style="width:50vw; height:100vh;">
+
+
+    <div class="content-show">
+      <h1><%= @user.first_name %></h1>
+      <h2><%= @user.age %> ans</h2>
+      <p><%= @user.description %></p>
+    </div>
+    <span class="badge"><%= @user.formation %></span>
+
+  </div>
+
+</div>

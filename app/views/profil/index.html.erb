@@ -1,0 +1,30 @@
+
+  <div class="container">
+    <section class="profil">
+
+    <h1>Cherche Michel(le) !</h1>
+
+      <% @users.each do |user| %>
+          <div class="row">
+
+            <div class="example-2 cards">
+              <div class="wrapper" style="background-image:url(<%= user.image %>)">
+                <div class="data">
+                  <div class="content">
+                    <h3 class="title"><%= user.first_name %>, <%= user.age %></h3>
+                    <p class="text"><%= truncate user.description, length: 50 %></p>
+                    <%= link_to 'Découvrir', user_path(user.id), class:"little-btn" %>
+
+                  </div>
+                </div>
+              </div>
+           </div>
+
+          </div>
+      <% end %>
+
+    </section>
+
+
+    </div>
+  </div>
