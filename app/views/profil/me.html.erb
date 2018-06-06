@@ -1,28 +1,29 @@
+<section class="banner1">
+  <div class="container">
+    <%= simple_form_for @user, url:me_path do |f| %>
 
-<div class="container">
-  <%= simple_form_for @user, url:me_path do |f| %>
+      <div class="field text-field">
+        <%= f.input :first_name, label:"Prénom" %>
+      </div>
+      <div class="field text-field">
+        <%= f.input :last_name, label:"Nom" %>
+      </div>
+      <div class="field text-field">
+        <%= f.input :age, collection: 18..60, label:"Age" %>
+      </div>
+      <div class="field text-field">
+        <%= f.input :formation, collection: ["MMI", "PUB", "Com' des orgas", "IJBA", "Métiers du livre", "Info Num", "Carrière Sociale"], label:"De quel formation de l'IUT êtes-vous ?" %>
+      </div>
+      <div class="field text-field">
+        <%= f.input :description, label:"Décrivez vous !" %>
+      </div>
+      <div class="field text-field">
+        <%= f.input :image, label:"Votre plus belle photo" %>
+      </div>
+      <div class="actions">
+        <%= f.button :submit, label:"Enregistrer" %>
+      </div>
 
-    <div class="field text-field">
-      <%= f.input :first_name, label:"Prénom" %>
-    </div>
-    <div class="field text-field">
-      <%= f.input :last_name, label:"Nom" %>
-    </div>
-    <div class="field text-field">
-      <%= f.input :age, collection: 18..60, label:"Age" %>
-    </div>
-    <div class="field text-field">
-      <%= f.input :formation, collection: ["MMI", "PUB", "Com' des orgas", "IJBA", "Métiers du livre", "Info Num", "Carrière Sociale"], label:"De quel formation de l'IUT êtes-vous ?" %>
-    </div>
-    <div class="field text-field">
-      <%= f.input :description, label:"Décrivez vous !" %>
-    </div>
-    <div class="field text-field">
-      <%= f.input :image, label:"Votre plus belle photo" %>
-    </div>
-    <div class="actions">
-      <%= f.button :submit, label:"Enregistrer" %>
-    </div>
-
-  <% end %>
-</div>
+    <% end %>
+  </div>
+</section>
