@@ -5,6 +5,7 @@ class ProfilController < ApplicationController
   end
 
   def show
+    
     @user = User.find(params[:id])
   end
 
@@ -15,10 +16,6 @@ class ProfilController < ApplicationController
   def create
     @user = User.create(user_params)
     redirect_to root_path
-  end
-
-  def edit
-    @user = User.find(params[:id])
   end
 
   def update_me

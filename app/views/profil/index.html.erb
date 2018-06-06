@@ -13,7 +13,7 @@
                   <div class="content">
                     <h3 class="title"><%= user.first_name %>, <%= user.age %></h3>
                     <p class="text"><%= truncate user.description, length: 50 %></p>
-                    <%= link_to 'Découvrir', user_path(user.id), class:"little-btn" %>
+                    <%= link_to 'Découvrir', profil_show_path(user.id), class:"little-btn" %>
 
                   </div>
                 </div>

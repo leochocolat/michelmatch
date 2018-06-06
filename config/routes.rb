@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'profil' => 'profil#index'
 
-  get 'user' => 'profil#show'
+  get 'profil/show'
 
   root to: 'pages#home'
 
