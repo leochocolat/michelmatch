@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'profil' => 'profil#index'
 
-  get 'profil/show'
+  get 'profil/:id' => 'profil#show', as: :profil_show
 
   root to: 'pages#home'
 

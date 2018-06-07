@@ -21,7 +21,8 @@
         <%= f.input :image, label:"Votre plus belle photo" %>
       </div>
       <div class="actions">
-        <%= f.button :submit, label:"Enregistrer" %>
+        <%= f.button :submit, "Enregistrer", class:"btn-primary" %>
+        <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, class:"btn btn-primary" %>
       </div>
 
     <% end %>
