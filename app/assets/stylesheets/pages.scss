@@ -20,9 +20,9 @@ p {
 
 .btn-primary {
   &:hover {
-    color: black;
-    background-color: white;
+    background-color: transparent;
     border-color: white;
+    transform: translateY(-5px);
   }
 }
 

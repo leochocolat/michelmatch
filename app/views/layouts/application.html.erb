@@ -13,8 +13,12 @@
 
       <span class="navbar-brand"><%= link_to image_tag("logo-michel-blanc.png", size: "90x90", alt: ""), root_path %></span>
       <% if user_signed_in? %>
-        <%= link_to 'Modifier mon profil', me_path, class: "btn btn-primary" %>
-
+        <% if current_user.first_name.nil? %>
+          <%= link_to 'Créer mon profil', me_path, class: "btn btn-primary" %>
+        <% else %>
+          <%= link_to 'Modifier mon profil', me_path, class: "btn btn-primary" %>
+        <% end %>
+        <!-- <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, class:"btn btn-primary" %> -->
       <% else %>
       <%= link_to 'Se connecter', new_user_session_path, class:"btn btn-primary"   %>
       <% end %>

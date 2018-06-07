@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  validates :first_name, :last_name, :age, :image, :formation, presence: true
-  validates :age, inclusion: { in: 18..60 }
-  validates :image, uniqueness: true
+  validates :first_name, :last_name, :age, :image, :formation, presence: true, on: :update
+  validates :age, inclusion: { in: 18..60 }, on: :update
+  validates :image, uniqueness: true, on: :update
 end
