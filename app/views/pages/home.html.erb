@@ -2,7 +2,11 @@
   <div class="container">
     <div class="accueil">
       <h1>Hello you,</h1>
-      <%= link_to 'Commence à chercher Michel(le) !', profil_path, class:"btn btn-primary" %>
+      <% if user_signed_in? %>
+        <%= link_to 'Commence à chercher Michel(le) !', profil_path, class:"btn btn-primary" %>
+      <% else %>
+        <%= link_to 'Commencer à chercher Michel(le) !', new_user_session_path, class:"btn btn-primary"   %>
+      <% end %>
     </div>
 
 
