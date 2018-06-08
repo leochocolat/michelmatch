@@ -17,8 +17,9 @@
       <div class="field text-field">
         <%= f.input :description, label:"Décrivez vous !" %>
       </div>
-      <div class="field text-field">
-        <%= f.input :image, label:"Votre plus belle photo" %>
+      <div class="field actions">
+        <!-- <%= f.input :image, label:"Votre plus belle photo" %> -->
+        <%= f.input :photo, label:"Votre plus belle photo", class:"btn btn-primary" %>
       </div>
       <div class="actions">
         <%= f.button :submit, "Enregistrer", class:"btn-primary" %>

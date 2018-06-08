@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 5.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -30,7 +30,9 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'font-awesome-sass', '~> 4.7'
 gem 'simple_form'
 gem 'devise'
-
+gem 'figaro'
+gem 'cloudinary', require: false
+gem 'activestorage-cloudinary-service'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
