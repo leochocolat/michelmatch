@@ -27,6 +27,34 @@ section {
   -moz-animation: bg 2s infinite;
 }
 
+.banner4 {
+  background-image: asset-data-url("bg4.jpg");
+  animation: bg 2s infinite;
+  -webkit-animation: bg 2s infinite;
+  -moz-animation: bg 2s infinite;
+}
+
+.banner5 {
+  background-image: asset-data-url("bg5.jpg");
+  animation: bg 2s infinite;
+  -webkit-animation: bg 2s infinite;
+  -moz-animation: bg 2s infinite;
+}
+
+.banner6 {
+  background-image: asset-data-url("bg6.jpg");
+  animation: bg 2s infinite;
+  -webkit-animation: bg 2s infinite;
+  -moz-animation: bg 2s infinite;
+}
+
+.banner7 {
+  background-image: asset-data-url("bg7.jpg");
+  animation: bg 2s infinite;
+  -webkit-animation: bg 2s infinite;
+  -moz-animation: bg 2s infinite;
+}
+
 @keyframes bg {
   0% {
     background-size: 100%;
