@@ -14,7 +14,8 @@
                     <h3 class="title"><%= user.first_name %>, <%= user.age %></h3>
                     <p class="text"><%= truncate user.description, length: 50 %></p>
                     <%= link_to 'Découvrir', profil_show_path(user.id), class:"little-btn" %>
-
+                    <%= link_to 'Like', relationships_path(likee_id: user.id, liker_id: current_user.id, relationType: true), method: :post, class:"little-btn" %>
+                    <%= link_to 'Dislike', relationships_path(likee_id: user.id, liker_id: current_user.id, relationType: false), method: :post ,class:"little-btn" %>
                   </div>
                 </div>
               </div>
